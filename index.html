@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Calendar </title>
+        <style>
+        body{
+            background:gray;
+        }
+        .container{
+            max-width: 800px;
+            margin: auto;
+            font-family: sans-serif;
+        }
+        .month{
+            text-align: center;
+            background: plum;
+            font-size: 2.5em;
+            letter-spacing: 1px;
+            color: aliceblue;
+            padding: 25px;
+            border: 1px solid gray;
+
+        }
+        table,th,tr{
+            width: 100%;
+            table-layout: fixed;
+            text-align: center;
+            font-size: 17px;
+            border-collapse: collapse;
+            border: 1px solid gray;
+
+        }
+        tr,th,td{
+         padding: 15px;
+        }
+        th{
+            background:aqua;
+            color: gray;
+
+        }
+        td{
+            background: paleturquoise
+        }
+        td.active{
+            background: rgb(32, 80, 80)
+
+        }
+        td:hover{
+            background: orchid;
+
+        }
+
+        
+        </style>
+    </head>
+
+    <body>
+        <h1 style="text-align:center;">Calendar</h1>
+        <div class="container">
+            <div class="month">
+                <strong id="CurrentYear"> </strong>
+            </div>
+        <table id="mainTable" >
+            <thead id="mainTableHead">
+
+            </thead>
+            <tbody id="mainTableBody">
+        </tbody>
+        </table>
+    </div>
+    <script src="almostJquery.js"></script>
+    <script src="main.js"></script>
+    </body>
+</html>
